@@ -1,0 +1,18 @@
+{% extends 'app/main.html' %}
+{% block content %}
+<h1>
+    Product
+    </h1>
+    {% for i in product %}
+    <table>
+        <ul>
+            <li>{{i.name}}</li>
+            <li>{{i.category}}</li>
+            <li>{{i.price}}</li>
+        </ul>
+    </table>
+    
+    {% endfor %}
+
+
+    {% endblock content %}

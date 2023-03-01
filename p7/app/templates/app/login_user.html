@@ -1,0 +1,28 @@
+<form method="POST" action="">
+    {% csrf_token %}
+    <div>
+        <input type="text" name="username" placeholder="Username...">
+    </div><div>
+            <input type="password" name="password" placeholder="Password..." >
+    </div>
+
+        <div>
+                <input type="submit" value="Login">
+            </div>
+</form>
+{% for message in messages %}
+<p style="color: red;">{{ message }}</p>
+{% endfor %}
+<p>New User? </p><a href="{% url 'register_user' %}">Register</a>
+
+
+
+
+
+
+
+
+
+
+
+

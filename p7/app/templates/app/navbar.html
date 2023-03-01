@@ -1,0 +1,14 @@
+<hr>
+<h1>Navbar</h1>
+<a href="{% url 'customer' %}">Customer</a>
+<a href="{% url 'order' %}">order</a>
+<a href="{% url 'product' %}">Product</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<span>Hello, {{request.user}}</span>
+<span><a href="{% url 'logout_user' %}">Logout</a></span>
+
+
+
+<hr>
